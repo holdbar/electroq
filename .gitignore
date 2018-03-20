@@ -1,8 +1,2 @@
-# form_habit
-# .gitignore
-
-*.pyc
-*.db
-.env/*
-*.sqlite3
-
+/node_modules
+.idea
