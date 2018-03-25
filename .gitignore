@@ -1,6 +1,5 @@
-# form_habit
-# .gitignore
-
+node_modules/*
+.idea/*
 *.pyc
 *.db
 .env/*
