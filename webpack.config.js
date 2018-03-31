@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const BundleTracker = require('webpack-bundle-tracker');
 module.exports = {
     module: {
         
@@ -42,6 +43,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
-        })
-    ]
+        }),
+        new BundleTracker({filename: './webpack-stats.json'}),
+        ]
 };
